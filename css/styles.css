@@ -1,20 +1,16 @@
-.navbar-green {
+.navbar-dark {
     background-color: ;
     font-family: "Big Shoulders Text", cursive;
-}
-
-.site-footer {
-    background-color:rgb(100, 200, 100);
-    padding: 20px 0;
+    font-size: 200%;
 }
 
 .nav-link {
     color: white;
 }
 
-.nav-link:hover {
+/*.nav-link:hover {
     color: black;
-}
+}*/
 
 .bigphoto {
     background-image: url("../img/matcha-man-2.jpg");
@@ -29,25 +25,8 @@
     background-image: url("../img/menupic.jpg");
     min-height: 800px;
     background-size: cover;
+    background-attachment: local;
     background-position: center;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 40%;
-    font-family: "Big Shoulders Text", cursive;
-}
-
-h4 {
-    text-align: center;
-    color: white;
-    font-family: "Big Shoulders Text", cursive;
-}
-
-.list-unstyled {
-    text-align: center;
-    color: white;
-    font-family: "Big Shoulders Text", cursive;
 }
 
 .orderpic {
@@ -58,10 +37,48 @@ h4 {
     background-repeat: no-repeat;
 }
 
-.map {
-    margin-left: 350px;
+.aboutus {
+    background-image: url("../img/aboutus.JPG");
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.careers {
+    background-image: url("../img/careerspic.JPG");
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    padding-top: 50%;
+    padding-bottom: 50%;
+    text-align: center;
+    font-family: "Big Shoulders Text", cursive;
+}
+
+h4 {
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    font-family: "Big Shoulders Text", cursive;
+}
+
+.list-unstyled {
+    text-align: center;
+    font-size: 120%;
+    color: white;
+    font-family: "Big Shoulders Text", cursive;
 }
 
 .btn-social-icon {
     color: white
+}
+
+.site-footer {
+    background: #49592a;
+    padding: 20px 0;
 }
