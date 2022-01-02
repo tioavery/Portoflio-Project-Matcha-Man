@@ -1,7 +1,21 @@
+body {
+    overflow-x: hidden;
+}
+
 .navbar-dark {
+    position: absolute;
     background-color: ;
     font-family: "Big Shoulders Text", cursive;
     font-size: 200%;
+    z-index: 1;
+}
+
+#matchaNavbar {
+    margin-left: 125px;
+}
+
+.navbar-toggler {
+    margin-left: 325px;
 }
 
 .nav-link {
@@ -31,8 +45,9 @@
 
 .orderpic {
     background-image: url("../img/orderpic.jpg");
-    min-height: 800px;
+    max-height: 800px;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -45,6 +60,12 @@
     background-repeat: no-repeat;
 }
 
+.locationpic {
+    background-image: url("../img/locationpic.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .careers {
     background-image: url("../img/careerspic.JPG");
     min-height: 800px;
@@ -54,6 +75,7 @@
 }
 
 h1 {
+    font-size: 100px;
     padding-top: 50%;
     padding-bottom: 50%;
     text-align: center;
@@ -62,6 +84,7 @@ h1 {
 
 h4 {
     text-align: center;
+    margin-top: 20px;
     font-size: 200%;
     color: white;
     font-family: "Big Shoulders Text", cursive;
@@ -80,5 +103,52 @@ h4 {
 
 .site-footer {
     background: #49592a;
-    padding: 20px 0;
+    padding: 20px, 0;
+}
+
+h2 {
+    font-size: 100px;
+    margin-top: 20px;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    font-family: "Big Shoulders Text", cursive;
+}
+
+#link {
+    color: black;
+    text-decoration: none;
+}
+
+#link2 {
+    color: white;
+    text-decoration: none;
+}
+
+video {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    font-size: 50px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Big Shoulders Text", cursive;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.aboutuspic {
+    background-image: url("../img/aboutuspic2.jpg");
+    min-height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
