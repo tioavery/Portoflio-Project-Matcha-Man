@@ -14,30 +14,114 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
     <title>Matcha Man Ice Cream & Taiyaki</title>
 </head>
 <body>
+    <div class="careersHeader">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container" id="logo">
+                <a class="navbar-brand" href="index.html"><img src="img/matchamanlogo.png" height="50" width="50" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#matchaNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="matchaNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html#location">Location</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Careers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container" id="logo">
-            <a class="navbar-brand" href="index.html"><img src="img/matchamanlogo.png" height="50" width="50" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#matchaNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="matchaNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
-                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="careers.html#location">Location</a></li>
-                <li class="nav-item active"><a class="nav-link" href="#">Careers</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
+    <div id="applicationForm">
+        <form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+            <table border="0" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td style="width: 50%">
+                        <label for="First_Name"><b>First name *</b></label><br />
+                        <input name="First_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+                    </td>
+                    <td style="width: 50%">
+                        <label for="Last_Name"><b>Last name *</b></label><br />
+                        <input name="Last_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Email_Address"><b>Email *</b></label><br />
+                        <input name="Email_Address" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Portfolio"><b>Portfolio website</b></label><br />
+                        <input name="Portfolio" type="text" maxlength="255" value="http://" style="width:100%;max-width: 535px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Position"><b>Position you are applying for *</b></label><br />
+                        <input name="Position" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Salary"><b>Salary requirements</b></label><br />
+                        <input name="Salary" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+                    </td>
+                    <td>
+                        <label for="StartDate"><b>When can you start?</b></label><br />
+                        <input name="StartDate" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Phone"><b>Phone *</b></label><br />
+                        <input name="Phone" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+                    </td>
+                    <td>
+                        <label for="Fax"><b>Fax</b></label><br />
+                        <input name="Fax" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Relocate"><b>Are you willing to relocate?</b></label><br />
+                        <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+                        <input name="Relocate" type="radio" value="No" /> No      
+                        <input name="Relocate" type="radio" value="NotSure" /> Not sure
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Organization"><b>Last company you worked for</b></label><br />
+                        <input name="Organization" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Reference"><b>Reference / Comments / Questions</b></label><br />
+                        <textarea name="Reference" rows="7" cols="40" style="width:100%;max-width: 535px"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <div style="float: right"> <a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                        <input name="skip_submit" type="submit" value="Send Application" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 
     <footer class="site-footer">
         <div class="container">
@@ -51,7 +135,7 @@
                         <input type="text" placeholder="Email" name="mail" required>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Submit">
+                        <button type="button" class="btn btn-outline-light">Submit</button>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md form-group text-center">
@@ -95,6 +179,7 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="js/scripts.js"></script>
 
 </body>
 

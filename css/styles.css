@@ -8,6 +8,29 @@ body {
     font-size: 200%;
 }
 
+nav.stroke ul li a {
+  position: relative;
+}
+
+/* nav stroke */
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+/* nav stroke */
+
 /* This is the navbar for the about page */
 #navabout {
     position: absolute;
@@ -29,8 +52,8 @@ body {
 }
 
 .bigphoto {
-    background-image: url("../img/matcha-man-2.jpg");
-    min-height: 1000px;
+    background-image: url("../img/menuheaderphoto.jpg");
+    min-height: 800px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -114,7 +137,7 @@ h2 {
     padding: 100px;
     text-align: center;
     color: white;
-    font-family: "Big Shoulders Text", cursive;
+    font-family: 'Sigmar One', cursive;
 }
 
 #link {
@@ -162,7 +185,7 @@ p {
 }
 
 .menuHeader {
-    background-image: url("../img/menuheaderphoto.jpg");
+    background-image: url("../img/menuheaderphoto2.jpg");
     min-height: 750px;
     background-size: cover;
     background-attachment: fixed;
@@ -217,5 +240,111 @@ p {
 
 #homeTitle {
     margin-top: 100px;
-    font-size: 125px;
+    font-size: 7vw;
+    font-family: 'Sigmar One', cursive;
+}
+
+/* circle fill */
+#link {
+    display: inline-block;
+  }
+
+#link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+
+#link
+#link:after,
+#link:before {
+    transition: all .5s;
+  }
+
+#link:hover {
+    color: #555;
+  }
+
+#link {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#link:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+#link:hover:after {
+    -webkit-animation: circle 1.5s ease-in forwards;
+}
+/* circle fill */
+
+/* Keyframes */
+@-webkit-keyframes circle {
+    0% {
+      width: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      z-index: -1;
+      background: #eee;
+      border-radius: 100%;
+    }
+    100% {
+      background: #aaa;
+      height: 5000%;
+      width: 5000%;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 0;
+    }
+  }
+
+/* to center application form on page */
+#applicationForm {
+text-align: center;
+}
+
+#applicationForm > * {
+    text-align: left;
+}
+
+form {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* to center application form on page */
+
+.careersHeader {
+    background-image: url("../img/careersheaderphoto2.jpg");
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
