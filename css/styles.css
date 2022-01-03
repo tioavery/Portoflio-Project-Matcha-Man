@@ -3,12 +3,18 @@ body {
 }
 
 .navbar-dark {
-    position: absolute;
-    background-color: ;
+    background-color: #00000075;
     font-family: "Big Shoulders Text", cursive;
     font-size: 200%;
+}
+
+/* This is the navbar for the about page */
+#navabout {
+    position: absolute;
+    right: 2.5px;
     z-index: 1;
 }
+/* the z-index allows the navbar to be clickable and the absolute position places it over the video */
 
 #matchaNavbar {
     margin-left: 125px;
@@ -21,10 +27,6 @@ body {
 .nav-link {
     color: white;
 }
-
-/*.nav-link:hover {
-    color: black;
-}*/
 
 .bigphoto {
     background-image: url("../img/matcha-man-2.jpg");
@@ -151,4 +153,69 @@ p {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#about4 {
+    text-align:center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menuHeader {
+    background-image: url("../img/menuheaderphoto.jpg");
+    min-height: 750px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#menu1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#menuTitle {
+    font-size: 15vw; /* vw makes the text fluid */
+}
+
+#menuPics {
+    margin-bottom: 50px;
+}
+
+.orderHeader {
+    background-image: url("../img/orderheader3.jpg");
+    min-height: 750px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#orderLogos {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#uberEats {
+    margin-bottom: 25px;
+} 
+
+#postMates {
+    margin-bottom: 25px;
+}
+
+#doorDash {
+    margin-bottom: 25px;
+}
+
+#grubHub {
+    margin-bottom: 25px;
+}
+
+#homeTitle {
+    margin-top: 100px;
+    font-size: 125px;
 }

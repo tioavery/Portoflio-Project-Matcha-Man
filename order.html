@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <div class="bigphoto">
+    <div class="orderHeader">
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container" id="logo">
                 <a class="navbar-brand" href="index.html"><img src="img/matchamanlogo.png" height="50" width="50" /></a>
@@ -28,11 +28,11 @@
             </div>
             <div class="collapse navbar-collapse" id="matchaNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Order</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#location">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html#location">Location</a></li>
                     <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
                 </ul>
             </div>
@@ -40,51 +40,28 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col media-body align-self-center">
-                    <h2 id="homeTitle">MATCHA MAN<br>ICE CREAM CO.</h2>
+                    <h2 id="menuTitle">ORDER</h2>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-12 col-md-6 media-body align-self-center">
-            <h1><a id="link" href="menu.html">Menu</a></h1>
-        </div>
-        <div class="col-xs-12 col-md-6 menupic">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col orderpic">
-            <div class="col media-body align-self-center">
-                <h2><a id="link2" href="order.html">Order</a></h2>
+    <div class="container" id="orderLogos">
+        <div class="row">
+            <div class="col">
+                <a href="https://www.ubereats.com/"><img id="uberEats" src="img/uber-eats-logo-1.png" height="250" /></a>
+            </div>
+            <div class="col">
+                <a href="https://postmates.com/"><img id="postMates" src="img/postmateslogo.png" height="250" /></a>
+            </div>
+            <div class="col">
+                <a href="https://www.doordash.com/"><img id="doorDash" src="img/doordashlogo.png" height="250" /></a>
+            </div>
+            <div class="col">
+                <a href="https://www.grubhub.com/"><img id="grubHub" src="img/grubhublogo.png" height="250" /></a>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-md-6 order-last order-md-first aboutus">
-        </div>
-        <div class="col-xs-12 col-md-6 media-body align-self-center">
-            <h1><a id="link" href="aboutus.html">About</a></h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col locationpic">
-            <div class="col media-body align-self-center">
-                <h2><a id="link2" href="index.html#location">Location</a></h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-md-6 media-body align-self-center">
-            <h1><a id="link" href="careers.html">Careers</a></h1>
-        </div>
-        <div class="col-xs-12 col-md-6 careers">
-        </div>
-    </div>
-
-
-
-
 
     <footer class="site-footer">
         <div class="container">
@@ -142,5 +119,6 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
